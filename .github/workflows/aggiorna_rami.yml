@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   update_s4me_branch:
     runs-on: ubuntu-latest

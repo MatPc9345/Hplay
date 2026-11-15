@@ -2,6 +2,7 @@
     "name"              : "[COLOR blue]s4me[/COLOR]_Streaming[COLOR red]Community[/COLOR]",
     "plugin"            : "plugin.video.s4me",
     "priority"          : 100,
+	"disabled"          : "false",
     "is_resolvable"     : "false",
     "make_playlist"     : "upnext",
     "play_movie": [

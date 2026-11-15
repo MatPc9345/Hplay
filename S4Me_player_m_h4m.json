@@ -2,6 +2,7 @@
     "name"              : "[COLOR blue]s4me[/COLOR]_[COLOR red]HD4me[/COLOR]",
     "plugin"            : "plugin.video.s4me",
     "priority"          : 100,
+	"disabled"          : "false",
     "is_resolvable"     : "false",
     "play_movie": [
         "plugin://plugin.video.s4me/?action=search&channel=hd4me",

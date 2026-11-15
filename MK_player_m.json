@@ -2,6 +2,7 @@
     "name"              : "[COLOR aqua]MK[/COLOR]_[COLOR red]Film IMDb[/COLOR]",
     "plugin"            : "plugin.video.mandrakodi",
     "priority"          : 100,
+    "disabled"          : "true",
     "is_resolvable"     : "true",
     "assert": {
         "play_movie"    : ["imdb"]

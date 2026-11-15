@@ -2,6 +2,7 @@
     "name"              : "[COLOR blue]s4me[/COLOR]_[COLOR turquoise]CB[/COLOR][COLOR grey]01[/COLOR]",
     "plugin"            : "plugin.video.s4me",
     "priority"          : 100,
+	"disabled"          : "false",
     "is_resolvable"     : "false",
     "make_playlist"     : "upnext",
     "play_movie": [

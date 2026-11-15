@@ -2,6 +2,7 @@
     "name"              : "[COLOR blue]s4me[/COLOR]_[COLOR red]Toon[/COLOR]Italia",
     "plugin"            : "plugin.video.s4me",
     "priority"          : 100,
+	"disabled"          : "false",
     "is_resolvable"     : "false",
     "make_playlist"     : "upnext",
     "assert": {

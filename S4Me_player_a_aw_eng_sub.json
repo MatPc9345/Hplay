@@ -1,0 +1,35 @@
+{
+    "name"              : "[COLOR blue]s4me[/COLOR]_Anime[COLOR blue]World[/COLOR](titolo-eng-sub)",
+    "api_language"      : "en-US",
+    "plugin"            : "plugin.video.s4me",
+    "priority"          : 101,
+	"is_resolvable"     : "false",
+	"make_playlist"     : "upnext",
+	"assert": {
+        "play_movie"    : ["title","year"],
+        "play_episode"  : ["showname","season","episode"]
+	},
+    "play_movie": [
+        "plugin://plugin.video.s4me/?action=search&channel=animeworld",
+        {"keyboard": "{title}"},
+        {"dialog": "auto", "strict": "true", "label": "{title}", "title": "(?i)^.*{title}.*(\\[ITA\\|\\[Sub-ITA\\]]).*$", "year": "{year}"},
+		{"position": "1"}
+    ],
+	"play_episode": [
+        "plugin://plugin.video.s4me/?action=search&channel=animeworld",
+        {"keyboard": "{showname}"},
+        {"label": "(?i)^.*{showname}.*\\[Sub-ITA\\].*$", "year": "{showyear}"},
+        {"return": "true", "season": "{season}", "episode": "{episode}"},
+        {"return": "true", "episode": "{episode}"},
+        {"episode": "-1"},
+        {"return": "true", "episode": "{episode}"},
+        {"episode": "-1"},
+        {"return": "true", "episode": "{episode}"},
+        {"episode": "-1"},
+        {"episode": "{episode}"}
+    ],
+    "fallback": {
+        "play_movie": "S4Me_ricerca.json play_movie",
+        "play_episode": "S4Me_ricerca.json play_episode"
+    }
+}

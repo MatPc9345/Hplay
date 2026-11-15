@@ -2,6 +2,7 @@
     "name"              : "[COLOR aqua]MK[/COLOR]_[COLOR red]OLD TV Film/Telefilm/Cartoni[/COLOR]",
     "plugin"            : "plugin.video.mandrakodi",
     "priority"          : 101,
+    "disabled"          : "true",
     "is_resolvable"     : "true",
     "play_movie": [
         "plugin://plugin.video.mandrakodi/?action=getExtData2&url=https%3A%2F%2Ftest34344.herokuapp.com%2Ffilter.php%3FnumTest%3DA1A332B%26search%3D",

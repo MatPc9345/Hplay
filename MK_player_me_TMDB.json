@@ -2,6 +2,7 @@
     "name"              : "[COLOR aqua]MK[/COLOR]_[COLOR red]Film/Serie TMDB[/COLOR]",
     "plugin"            : "plugin.video.mandrakodi",
     "priority"          : 100,
+    "disabled"          : "true",
     "is_resolvable"     : "false",
     "assert": {
         "play_movie"    : ["tmdb"]

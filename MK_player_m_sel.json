@@ -1,0 +1,15 @@
+{
+    "name"              : "[COLOR aqua]MK[/COLOR]_[COLOR red]Film IMDb(sel-server)[/COLOR]",
+    "plugin"            : "plugin.video.mandrakodi",
+    "priority"          : 100,
+    "disabled"          : "true",
+    "is_resolvable"     : "true",
+    "assert": {
+        "play_movie"    : ["imdb"]
+    },
+    "play_movie": [
+        "plugin://plugin.video.mandrakodi/?action=myresolve&url=imdb&parIn={imdb}",
+        {"dialog": "auto", "strict": "true", "label": "{title}"},
+        {"dialog": "true", "strict": "true", "label": "{title}"}
+    ]
+}

@@ -4,7 +4,7 @@
     "priority"          : 100,
 	"disabled"          : "false",
     "is_resolvable"     : "false",
-    "make_playlist"     : "upnext",
+    "make_playlist"     : "false",
     "play_movie": [
         "plugin://plugin.video.s4me/?eyJhY3Rpb24iOiJzZWFyY2giLCJjaGFubmVsIjoiY2luZWJsb2cwMSIsImluZm9MYWJlbHMiOnsibWVkaWF0eXBlIjoibW92aWUifX0K",
         {"keyboard": "{title}"},

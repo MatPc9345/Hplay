@@ -2,19 +2,17 @@
     "name"              : "[COLOR aqua]MK[/COLOR]_[COLOR red]Film/Serie TMDB[/COLOR]",
     "plugin"            : "plugin.video.mandrakodi",
     "priority"          : 100,
-    "disabled"          : "true",
-    "is_resolvable"     : "false",
+    "disabled"          : "false",
+    "is_resolvable"     : "true",
     "assert": {
         "play_movie"    : ["tmdb"]
     },
     "play_movie": [
         "plugin://plugin.video.mandrakodi/?action=myresolve&url=tmdb&parIn={tmdb}",
-        {"return": "true", "title": "(?i)^.*PLAY.*$"},
-        {"dialog": "true", "strict": "true", "label": "{title}"}
+        {"title": "true", "title": "(?i)^.*PLAY.*$"}
     ],
     "play_episode": [
         "plugin://plugin.video.mandrakodi/?action=myresolve&url=tmdbs&parIn={tmdb}_{season}_{episode}",
-        {"return": "true", "title": "(?i)^.*PLAY.*$"},
-		{"dialog": "true", "strict": "true", "label": "{showname}", "title": "(?i)^.*{showname}.*$"}
+        {"title": "true", "title": "(?i)^.*PLAY.*$"}
     ]
 }
